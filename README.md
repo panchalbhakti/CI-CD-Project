@@ -1,6 +1,6 @@
-###CI-CD Project
+### CI-CD Project
 
-#🚀 CI/CD Pipeline for Node.js Dockerized Application
+# 🚀 CI/CD Pipeline for Node.js Dockerized Application
 
 ![CI/CD](https://github.com/panchalbhakti/CI-CD-Project/actions/workflows/ci-cd.yml/badge.svg)
 
