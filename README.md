@@ -1,7 +1,5 @@
 # 🚀 CI/CD Pipeline for Node.js Dockerized Application
 
-![CI/CD Pipeline](https://img.shields.io/badge/CI-CD%20Pipeline-success-green)
-
 ---
 
 ## 📌 Project Title
@@ -68,31 +66,5 @@ Developer → Git Push → GitHub Actions
 
 
 ---
-
-## 🐳 Docker Commands (Local Testing)
-
-### Build Image
-```bash
-docker build -t bhaktipanchal28/node-app .
-Run Container
-docker run -p 3000:3000 bhaktipanchal28/node-app
-
-👉 Open in browser: http://localhost:3000
-
-🔐 GitHub Secrets Required
-Secret Name	Description
-DOCKER_USERNAME	Your Docker Hub username
-DOCKER_PASSWORD	Your Docker Hub password
-📦 Expected Output
-Every code push triggers the pipeline automatically
-Application is tested and built
-Docker image is created and pushed to Docker Hub
-Image is available for deployment anytime
-🧠 Key Learnings
-Understanding CI/CD pipeline concepts
-Automating workflows using GitHub Actions
-Building and pushing Docker images
-Managing secrets securely in GitHub
-🏁 Conclusion
 
 This project demonstrates how DevOps practices can automate the software development lifecycle, making the process faster, reliable, and efficient.
