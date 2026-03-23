@@ -1,52 +1,78 @@
-🚀 CI/CD Pipeline for Node.js Dockerized Application
+# 🚀 CI/CD Pipeline for Node.js Dockerized Application
 
-📌 Project Title
+![CI/CD Pipeline](https://img.shields.io/badge/CI-CD%20Pipeline-success-green)
 
+---
+
+## 📌 Project Title
 Automated CI/CD Pipeline using GitHub Actions and Docker
 
-🎯 Objective
+---
 
+## 🎯 Objective
 The goal of this project is to build a fully automated CI/CD pipeline that:
-
-Integrates code changes automatically
-Builds and tests the application
-Creates a Docker image
-Pushes the image to Docker Hub
+- Integrates code changes automatically  
+- Builds and tests the application  
+- Creates a Docker image  
+- Pushes the image to Docker Hub  
 
 This reduces manual effort and ensures faster, reliable deployments.
 
-🛠️ Tools & Technologies Used
-Version Control: GitHub
-CI/CD Tool: GitHub Actions
-Backend: Node.js (Express)
-Containerization: Docker
-Container Registry: Docker Hub
-📁 Project Structure
+---
+
+## 🛠️ Tools & Technologies Used
+- **Version Control:** GitHub  
+- **CI/CD Tool:** GitHub Actions  
+- **Backend:** Node.js (Express)  
+- **Containerization:** Docker  
+- **Container Registry:** Docker Hub  
+
+---
+
+## 📁 Project Structure
+
 CI-CD-project/
 ├── .github/
-│   └── workflows/
-│       └── ci-cd.yml       # CI/CD workflow file
-├── app.js                 # Main application file
-├── package.json           # Dependencies & scripts
-├── Dockerfile             # Docker configuration
+│ └── workflows/
+│ └── ci-cd.yml
+├── app.js
+├── package.json
+├── Dockerfile
 └── node_modules/
-🔄 CI/CD Pipeline Workflow
-🔹 Trigger
-Pipeline starts automatically when code is pushed to the main branch
-🔹 Build Stage (CI)
-Checkout repository code
-Install dependencies (npm install)
-Run tests (npm test)
-🔹 Package Stage (CD)
-Build Docker image
-Tag image with Docker Hub username
-Push image to Docker Hub
-⚙️ Workflow Flow Diagram
+
+
+---
+
+## 🔄 CI/CD Pipeline Workflow
+
+### 🔹 Trigger
+- Pipeline starts automatically when code is pushed to the **main branch**
+
+### 🔹 Build Stage (CI)
+- Checkout repository code  
+- Install dependencies (`npm install`)  
+- Run tests (`npm test`)  
+
+### 🔹 Package Stage (CD)
+- Build Docker image  
+- Tag image with Docker Hub username  
+- Push image to Docker Hub  
+
+---
+
+## ⚙️ Workflow Flow
+
 Developer → Git Push → GitHub Actions
-        → Build & Test → Docker Build
-        → Push to Docker Hub
-🐳 Docker Commands (Local Testing)
-Build Image
+→ Build & Test → Docker Build
+→ Push to Docker Hub
+
+
+---
+
+## 🐳 Docker Commands (Local Testing)
+
+### Build Image
+```bash
 docker build -t bhaktipanchal28/node-app .
 Run Container
 docker run -p 3000:3000 bhaktipanchal28/node-app
